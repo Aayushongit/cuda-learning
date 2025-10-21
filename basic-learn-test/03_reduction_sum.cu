@@ -20,6 +20,8 @@ __global__ void reduce(float *input, float *output, int n) {
     if (tid == 0) output[blockIdx.x] = sdata[0];
 }
 
+
+
 int main() {
     const int n = 1024;
     const int threadsPerBlock = 256;

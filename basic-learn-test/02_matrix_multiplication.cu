@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <cuda_runtime.h>
 
+
 __global__ void matrixMul(float *a, float *b, float *c, int width) {
     int row = blockIdx.y * blockDim.y + threadIdx.y;
     int col = blockIdx.x * blockDim.x + threadIdx.x;
