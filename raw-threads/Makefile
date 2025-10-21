@@ -1,16 +1,16 @@
-CC = gcc
-CFLAGS = -Wall -Wextra -pthread -std=c11
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++20 -pthread
 LDFLAGS = -pthread
 
-SOURCES = $(wildcard *.c)
-TARGETS = $(SOURCES:.c=)
+SOURCES = $(wildcard *.cpp)
+TARGETS = $(SOURCES:.cpp=)
 
-.PHONY: all clean run
+.PHONY: all clean help
 
 all: $(TARGETS)
 
-%: %.c
-	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
+%: %.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $< $(LDFLAGS)
 
 clean:
 	rm -f $(TARGETS)
@@ -30,3 +30,6 @@ help:
 	@echo "Examples:"
 	@echo "  make 01_basic_thread"
 	@echo "  make run-01_basic_thread"
+	@echo ""
+	@echo "Note: Requires C++20 support (g++ 10+ or clang++ 10+)"
+	@echo "      Examples 13, 14, 17 use C++20 features (latch, semaphore, jthread)"

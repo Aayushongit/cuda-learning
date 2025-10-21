@@ -1,6 +1,6 @@
 # OpenMP Learning Examples
 
-**24 examples**: 16 C examples (fundamentals) + 8 C++ examples (numerical computing)
+**30 examples**: 22 C examples (fundamentals) + 8 C++ examples (numerical computing)
 
 ## Quick Start
 
@@ -51,6 +51,14 @@ make clean
 14. **13_race_condition.c** - Common pitfalls and solutions
 15. **14_matrix_multiply.c** - Matrix multiplication performance
 16. **15_pi_calculation.c** - Monte Carlo Pi estimation
+
+### Advanced Directives (Deep Dive)
+17. **17_advanced_loop_directives.c** - ordered, if, nowait clauses
+18. **18_simd_vectorization.c** - SIMD directives for vectorization
+19. **19_advanced_atomic.c** - Atomic read/write/update/capture variants
+20. **20_task_dependencies.c** - Task dependencies, priority, taskgroup
+21. **21_combined_clauses.c** - Complex examples with multiple clauses
+22. **22_pragma_reference.c** - Complete pragma syntax reference
 
 ---
 
@@ -165,8 +173,16 @@ export OMP_SCHEDULE="dynamic,2"
 - Templates allow generic parallel algorithms
 - C++ examples show production-ready patterns
 
+**For Advanced Examples (17-22):**
+- Examples 17-22 cover all OpenMP pragma variations
+- Use example 22 as a quick reference card
+- SIMD (18) requires compiler support (use -O2 or -O3)
+- Task dependencies (20) show modern OpenMP patterns
+- Combined clauses (21) shows real-world complexity
+
 **General:**
 - C examples teach OpenMP fundamentals
 - C++ examples show practical applications
 - Both use identical OpenMP directives
 - Performance patterns apply to both languages
+- Use `make list` to see examples organized by category
