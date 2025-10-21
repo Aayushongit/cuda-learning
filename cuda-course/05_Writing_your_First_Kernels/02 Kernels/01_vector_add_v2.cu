@@ -19,6 +19,8 @@ void vector_add_cpu(float *a, float *b, float *c, int n) {
     }
 }
 
+
+
 // CUDA kernel for 1D vector addition
 __global__ void vector_add_gpu_1d(float *a, float *b, float *c, int n) {
     int i = blockIdx.x * blockDim.x + threadIdx.x;

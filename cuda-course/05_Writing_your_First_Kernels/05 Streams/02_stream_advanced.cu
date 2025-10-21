@@ -20,7 +20,7 @@ __global__ void kernel1(float *data, int n) {
 
 __global__ void kernel2(float *data, int n) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
-    if (idx < n) {
+    if (idx < n) 
         data[idx] += 1.0f;
     }
 }
