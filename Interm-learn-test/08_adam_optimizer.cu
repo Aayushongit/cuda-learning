@@ -145,6 +145,7 @@ __global__ void lars_optimizer(float* weights, float* gradients, float* m, float
         // Compute local contributions to norms
         s_weight_norm[threadIdx.x] = weight * weight;
         s_grad_norm[threadIdx.x] = grad * grad;
+
     } else {
         s_weight_norm[threadIdx.x] = 0.0f;
         s_grad_norm[threadIdx.x] = 0.0f;

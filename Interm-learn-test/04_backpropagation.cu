@@ -6,6 +6,7 @@
 #include <random>
 #include <cmath>
 
+
 // Simple fully connected layer forward pass
 __global__ void fc_forward(const float* input, const float* weights, const float* bias,
                           float* output, int batch_size, int input_size, int output_size) {
