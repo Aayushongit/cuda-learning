@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/08_atomic_operations.dir/08_atomic_operations.cpp.o -o 08_atomic_operations 

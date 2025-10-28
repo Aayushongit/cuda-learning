@@ -1,0 +1,2 @@
+This is part 2.
+Content from second file.

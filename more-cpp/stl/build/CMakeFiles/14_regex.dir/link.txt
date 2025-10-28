@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/14_regex.dir/14_regex.cpp.o -o 14_regex 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/06_container_adapters.dir/06_container_adapters.cpp.o -o 06_container_adapters 

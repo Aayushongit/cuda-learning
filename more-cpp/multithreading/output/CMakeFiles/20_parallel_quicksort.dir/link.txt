@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/20_parallel_quicksort.dir/20_parallel_quicksort.cpp.o -o 20_parallel_quicksort 

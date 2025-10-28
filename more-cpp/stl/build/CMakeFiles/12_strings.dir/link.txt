@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/12_strings.dir/12_strings.cpp.o -o 12_strings 

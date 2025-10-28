@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/15_parallel_algorithms.dir/15_parallel_algorithms.cpp.o -o 15_parallel_algorithms  /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 

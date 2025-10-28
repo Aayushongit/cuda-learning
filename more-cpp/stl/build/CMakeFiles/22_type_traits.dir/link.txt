@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/22_type_traits.dir/22_type_traits.cpp.o -o 22_type_traits 

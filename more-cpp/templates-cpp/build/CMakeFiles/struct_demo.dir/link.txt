@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/struct_demo.dir/03_struct_examples.cpp.o -o struct_demo 
